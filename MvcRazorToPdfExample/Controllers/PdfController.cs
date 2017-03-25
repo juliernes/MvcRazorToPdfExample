@@ -89,7 +89,7 @@ namespace MvcRazorToPdfExample.Controllers
                     }
                 }
             };
-            
+
             return new PdfActionResult(model, (writer, document) =>
             {
                 document.SetPageSize(new Rectangle(500f, 500f, 90));
@@ -126,6 +126,7 @@ namespace MvcRazorToPdfExample.Controllers
             })
             {
                 FileDownloadName = "ElanWasHere.pdf"
+
             };
         }
     }
